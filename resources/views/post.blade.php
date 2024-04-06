@@ -17,6 +17,7 @@
     <thead>
       <tr>
         <th scope="col">Mã </th>
+        <th scope="col">Ảnh </th>
         <th scope="col">Tên sản phẩm</th>
         <th scope="col">Loại</th>
         <th scope="col">Giá</th>
@@ -28,6 +29,7 @@
       
       <tr>
         <th scope="row">{{ $product->id }}</th>
+        <td><img src={{ asset('images/'.$product->image) }}></td>
         <td>{{ $product->name }}</td>
         <td>{{ $product->category->name }}</td>
         <td>{{ $product->price }}</td>
